@@ -1,0 +1,11 @@
+<div class="row mt-4">
+<div class="card mt-4" style="width: 18rem;" *ngFor="let movie of movies">
+    <img class="card-img-top" [src]="baseimagenUrl+'/'+movie.poster_path" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">{{ movie.title }}</h5>
+      <p class="card-text">  Votes average: {{ movie.vote_average | number: "1.1-2" }}</p>
+  
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
+</div>
